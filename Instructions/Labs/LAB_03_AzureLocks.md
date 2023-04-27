@@ -45,7 +45,7 @@ In this task, you will create a storage account for the lab.
 
 1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** and enter **storage<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
-	>**Note**: It might take about a minute for the Cloud Shell pane to show up.
+	 >**Note**: It might take about a minute for the Cloud Shell pane to show up.
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
@@ -97,7 +97,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. Click on the **Notifications** icon in the toolbar at the top of the Azure portal and review the notification, which will resemble the following text: 
 
-   > **"Failed to update storage account 'xxxxxxxx'. Error: The scope 'xxxxxxxx' cannot perform write operation because following scope(s) are locked: '/subscriptions/xxxxx-xxx-xxxx-xxxx-xxxxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again"**
+   >**"Failed to update storage account 'xxxxxxxx'. Error: The scope 'xxxxxxxx' cannot perform write operation because following scope(s) are locked: '/subscriptions/xxxxx-xxx-xxxx-xxxx-xxxxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again"**
 
 1. Return the **Configuration** blade of the storage account and click on **Discard**. 
 
@@ -161,7 +161,9 @@ In this task, you will test the Delete lock. You should be able to modify the st
    > **Results:** In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+ **You have successfully completed the lab**

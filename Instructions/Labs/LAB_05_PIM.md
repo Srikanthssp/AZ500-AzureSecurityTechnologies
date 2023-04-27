@@ -119,7 +119,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
    
     >**Note**: Record the full user name and the password.
 
-1. On the **Create new user** blade, in **Property** tab under settings specify the following settings:
+1. On the **Create new user** blade, in **Properties** tab under settings specify the following settings:
    
    |Setting|Value|
    |---|---|
@@ -319,7 +319,7 @@ In this task, you will activate a role that requires approval.
 
 1. On the **My roles \| Azure AD roles** blade, locate the **Security Administrator** role, and click on **Activate**. 
 
-1. Click the warning **Additional verification required. Click to continue**. 
+1. If needed, Click the warning **Additional verification required. Click to continue**. 
 
 1. Follow the instructions to verify your identity.
 
@@ -378,7 +378,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will reduce the risk associated with "stale" role assignments. You will do this by creating a PIM access review to ensure that assigned roles are still valid. Specifically, you will review the Global Reader role. 
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`** using your account.
+1. Nevigate back to Azure portal Sign-in with your account.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
     
@@ -452,10 +452,12 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. Notice you can retrieve detailed information, including **Time**, **Requestor**, **Action**, **Resource name**, **Scope**, **Primary Target** and **Subject**. 
 
-   > Result: You have configured an access review and reviewed audit information.
+> **Result:** You have configured an access review and reviewed audit information.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+ - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+ - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+**You have successfully completed the lab**

@@ -27,9 +27,6 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create an Allowed Locations policy assignment and specify which Azure regions the policy can use.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Policy** and press the **Enter** key.
 
 1. On the **Policy** blade, in the **Authoring** section, select **Definitions**.
@@ -51,7 +48,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
    |Setting|Value|
    |---|---|
    |Subscription|the name of you Azure subscription|
-   |Resource group|**AZ500LAB02**|
+   |Resource group|**AZ500LAB02-<inject key="DeploymentID" enableCopy="false"/>**|
 
 1. Click on **Select**.
 
@@ -89,26 +86,27 @@ In this task, you will test the Allowed Locations policy assignment.
 
     |Setting|Value|
     |---|---|
-    |Resource group|**AZ500LAB02**|
+    |Resource group|**AZ500LAB02-<inject key="DeploymentID" enableCopy="false"/>**|
     |Name|**myVnet**|
     |Region|**(US) East US**|
 
 1. Click on **Review + create**. 
 
-1. On the **Review + create** a tab of the **Create virtual network** blade note the **Validation failed** message. 
+1. Click on **Create**. 
 
-    > **Note**: If the **Validation Failed** warning does not appear, click on **Previous** and wait a few more minutes.
+    > **Note**: You will receice **Deployment Failed** notification. This is the expected output since we are allowing to create resources only in the (Europe) UK South and restricting other regions using Azurepolicy.
 
-1. Click on the **Previous** tab, on the **Create virtual network** blade, click on the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
+1. Perform Previous **1-3** steps again of task 2 and create **virtual network** again, This time in the **Region** drop-down list, select **(Europe) UK South**.
 
 1. Click on **Review + create**, verify that validation passed, click on **Create**, and verify that the virtual network was created successfully. 
 
-> Exercise results: In this exercise, you learned to apply an Azure policy by selecting a built-in policy definitions and assigning it to a resource group.
-> 
+> **Exercise results**: In this exercise, you learned to apply an Azure policy by selecting a built-in policy definitions and assigning it to a resource group.
+ 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-> - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+ - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+ - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+**You have successfully completed the lab**
 
