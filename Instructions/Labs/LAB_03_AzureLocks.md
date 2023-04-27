@@ -74,7 +74,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
    
 1. On the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group blade, in the list of resources, select the new storage account **strgacc<inject key="DeploymentID" enableCopy="false"/>**.
   
-1. Under the **Settings** section in the left navigation pane, click on the "Locks" icon.
+1. Under the **Settings** section in the left navigation pane, click on the **Locks** icon.
 
 1. Click on **+ Add** and specify the following settings:
 
@@ -119,6 +119,8 @@ In this task, you remove the ReadOnly lock from the storage account and create a
 
 1. On the **Locks** blade, click on the **Delete** icon on the far right of the **ReadOnly Lock** entry.
 
+   >**Note**: Please refresh the page if ReadOnly Lock entry is listed.
+
 1. Click on **+ Add** and specify the following settings:
 
    |Setting|Value|
@@ -155,6 +157,8 @@ In this task, you will test the Delete lock. You should be able to modify the st
 6. In the **Settings** section, select **Locks**.  
 
 7. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
+
+   >**Note**: Please refresh the page once **Delete Lock** is deleted.
 
    > **Results:** In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
 
