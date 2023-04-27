@@ -45,7 +45,7 @@ In this task, you will create a storage account for the lab.
 
 1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** and enter **storage<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
-	>**Note**: It might take about a minute for the Cloud Shell pane to show up.
+	 >**Note**: It might take about a minute for the Cloud Shell pane to show up.
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
@@ -74,7 +74,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
    
 1. On the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group blade, in the list of resources, select the new storage account **strgacc<inject key="DeploymentID" enableCopy="false"/>**.
   
-1. Under the **Settings** section in the left navigation pane, click on the "Locks" icon.
+1. Under the **Settings** section in the left navigation pane, click on the **Locks** icon.
 
 1. Click on **+ Add** and specify the following settings:
 
@@ -97,7 +97,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. Click on the **Notifications** icon in the toolbar at the top of the Azure portal and review the notification, which will resemble the following text: 
 
-	> **"Failed to update storage account 'xxxxxxxx'. Error: The scope 'xxxxxxxx' cannot perform write operation because following scope(s) are locked: '/subscriptions/xxxxx-xxx-xxxx-xxxx-xxxxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again"**
+   >**"Failed to update storage account 'xxxxxxxx'. Error: The scope 'xxxxxxxx' cannot perform write operation because following scope(s) are locked: '/subscriptions/xxxxx-xxx-xxxx-xxxx-xxxxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again"**
 
 1. Return the **Configuration** blade of the storage account and click on **Discard**. 
 
@@ -105,7 +105,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. On the **Delete storage account** blade, we notice that the delete button is disabled with the following warning sign :
 
-	>**'storage-acc-name' can't be deleted because this resource or its parent has a lock. Locks must be removed before this resource can be deleted.**
+   >**'storage-acc-name' can't be deleted because this resource or its parent has a lock. Locks must be removed before this resource can be deleted.**
 	
    >**Note**:  You have now verified that a ReadOnly lock will stop accidental deletion and modification of a resource.
 
@@ -118,6 +118,8 @@ In this task, you remove the ReadOnly lock from the storage account and create a
 1. In the **Settings** section, select **Locks**.  
 
 1. On the **Locks** blade, click on the **Delete** icon on the far right of the **ReadOnly Lock** entry.
+
+   >**Note**: Please refresh the page if ReadOnly Lock entry is listed.
 
 1. Click on **+ Add** and specify the following settings:
 
@@ -142,13 +144,11 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 4. On the **Delete storage account** blade, we notice that the delete button is disabled with the following warning sign :
 
-	>**'storage-acc-name' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted.**
+   >**'storage-acc-name' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted.**
 
    >**Note**:  You have now verified that a **Delete** lock will allow configuration changes but stop accidental deletion.
 
    >**Note**:  By using Resource Locks you can implement an extra line of defense against accidental or malicious changes and/or deletion of the most important resources. Resource locks can be removed by any user with the **Owner** role, but doing so requires a conscious effort. Locks supplement Role Based Access Control. 
-
-
 
 5. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
@@ -156,9 +156,11 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 7. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
 
-  > **Results:** In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
+   >**Note**: Please refresh the page once **Delete Lock** is deleted.
 
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Results:** In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
