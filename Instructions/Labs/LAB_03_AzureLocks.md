@@ -97,7 +97,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. Click on the **Notifications** icon in the toolbar at the top of the Azure portal and review the notification, which will resemble the following text: 
 
-	> **"Failed to update storage account 'xxxxxxxx'. Error: The scope 'xxxxxxxx' cannot perform write operation because following scope(s) are locked: '/subscriptions/xxxxx-xxx-xxxx-xxxx-xxxxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again"**
+   > **"Failed to update storage account 'xxxxxxxx'. Error: The scope 'xxxxxxxx' cannot perform write operation because following scope(s) are locked: '/subscriptions/xxxxx-xxx-xxxx-xxxx-xxxxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again"**
 
 1. Return the **Configuration** blade of the storage account and click on **Discard**. 
 
@@ -105,7 +105,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. On the **Delete storage account** blade, we notice that the delete button is disabled with the following warning sign :
 
-	>**'storage-acc-name' can't be deleted because this resource or its parent has a lock. Locks must be removed before this resource can be deleted.**
+   >**'storage-acc-name' can't be deleted because this resource or its parent has a lock. Locks must be removed before this resource can be deleted.**
 	
    >**Note**:  You have now verified that a ReadOnly lock will stop accidental deletion and modification of a resource.
 
@@ -144,13 +144,11 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 4. On the **Delete storage account** blade, we notice that the delete button is disabled with the following warning sign :
 
-	>**'storage-acc-name' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted.**
+   >**'storage-acc-name' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted.**
 
    >**Note**:  You have now verified that a **Delete** lock will allow configuration changes but stop accidental deletion.
 
    >**Note**:  By using Resource Locks you can implement an extra line of defense against accidental or malicious changes and/or deletion of the most important resources. Resource locks can be removed by any user with the **Owner** role, but doing so requires a conscious effort. Locks supplement Role Based Access Control. 
-
-
 
 5. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
