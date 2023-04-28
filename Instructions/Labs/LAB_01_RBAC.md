@@ -38,18 +38,18 @@ In this task, you will create a user account for Joseph Price.
 
 1. On the **Overview** blade of the Azure Active Directory tenant, in the **Manage** section, select **Users**, and then select **+ New user**, then, in the drop-down menu, click on **Create new user**.
 
-1. On the **New User** blade, ensure that the **Create user** option is selected, and specify the following settings:
+1. On the **New User** blade, ensure that the **Create new user** option is selected, and specify the following settings:
 
    |Setting|Value|
    |---|---|
-   |User name|**Joseph**|
+   |User principal name|**Joseph**|
    |Name|**Joseph Price**|
 
-1. Click on the copy icon next to the **User name** to copy the full user.
+1. Click on the copy icon next to the **User principal name** to copy the full user and store it in the notepad for further use.
 
-1. Ensure that the **Auto-generate** password is selected, and select the **Show password** checkbox to identify the automatically generated password. You would need to provide this password, along with the user name to Joseph. 
+1. Ensure that the **Auto-generate** password is selected, and click on the copy icon next to **Password** and store it in the notepad. You would need to provide this password, along with the user name to Joseph. 
 
-1. Click on **Create**.
+1. Click on **Review + create**, and then click on **Create**.
 
 1. Refresh the **Users \| All users** blade to verify the new user was created in your Azure AD tenant.
 
@@ -262,11 +262,12 @@ In this exercise, you will complete the following task:
 
 1. On the **AZ500Lab01 \| Access control (IAM)** blade, click on **+ Add** and then, in the drop-down menu, click on **Add role assignment**.
 
-1. On the **Add role assignment** blade, specify the following settings:
+1. On the **Add role assignment** blade, specify the following settings and click Next after each step
 
    |Setting|Value|
    |---|---|
-   |Role in the search tab|**Virtual Machine Contributor**|
+   |Assignment type|select **Job function roles**|
+   |Role |Search and select **Virtual Machine Contributor**|
    |Assign access to (Under Members Pane)|**User, group, or service principal**|
    |Select (+Select Members)|**Service Desk**|
 
