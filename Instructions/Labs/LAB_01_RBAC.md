@@ -1,5 +1,4 @@
 # Lab 01: Role-Based Access Control
-# Student lab manual
 
 ## Lab scenario
 
