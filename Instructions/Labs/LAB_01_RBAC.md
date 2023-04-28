@@ -36,6 +36,8 @@ In this task, you will create a user account for Joseph Price.
 
 1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
+      ![image](../images/az500-1-3.png)
+
 1. On the **Overview** blade of the Azure Active Directory tenant, in the **Manage** section, select **Users**, and then select **+ New user**, then, in the drop-down menu, click on **Create new user**.
 
 1. On the **New User** blade, ensure that the **Create new user** option is selected, and specify the following settings:
@@ -45,9 +47,11 @@ In this task, you will create a user account for Joseph Price.
    |User principal name|**Joseph**|
    |Name|**Joseph Price**|
 
-1. Click on the copy icon next to the **User principal name** to copy the full user and store it in the notepad for further use.
+     ![image](../images/az500-1-4.png)
 
-1. Ensure that the **Auto-generate** password is selected, and click on the copy icon next to **Password** and store it in the notepad. You would need to provide this password, along with the user name to Joseph. 
+1. Click on the copy icon next to the **User principal name** to copy the full username.
+
+1. Ensure that the **Auto-generate** password is selected, and click on the copy icon next to **Password**. You would need to provide this password, along with the user name to Joseph. 
 
 1. Click on **Review + create**, and then click on **Create**.
 
@@ -71,9 +75,15 @@ In this task, you will create the *Senior Admins* group, add the user account of
     
 1. Click on the **No owners selected** link, on the **Owners** blade, select **Joseph Price**, and click on **Select**.
 
+    ![image](../images/az500-1-5.png)
+
 1. Click on the **No members selected** link, on the **Members** blade, select **Joseph Price**, and click on **Select**.
 
+    ![image](../images/az500-1-6.png)
+
 1. Back on the **New Group** blade, click on **Create**.
+
+    ![image](../images/az500-1-7.png)
 
 > **Result:** You used the Azure Portal to create a user and a group, and assigned the user to the group. 
 
@@ -276,6 +286,8 @@ In this exercise, you will complete the following task:
 1. From the **Access control (IAM)** blade, click on the **Check access** tab.
 
 1. On the **AZ500Lab01 \| Access control (IAM)** blade, click on the **Check access** button under check access, and then in the **Search by name or email address** text box, type **Dylan Williams**.
+
+      ![image](../images/az500-1-8.png)
 
 1. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
 
