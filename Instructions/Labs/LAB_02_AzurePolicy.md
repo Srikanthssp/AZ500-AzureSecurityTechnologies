@@ -1,5 +1,4 @@
 # Lab 02: Azure Policy
-# Student lab manual
 
 ## Lab scenario
 
@@ -14,7 +13,7 @@ In this lab, you will complete the following:
 
 - Exercise 1: Implement Azure Policy. 
 
-### Exercise 1: Implement Azure Policy
+# Exercise 1: Implement Azure Policy
 
 #### Estimated timing: 20 minutes
 
@@ -23,14 +22,13 @@ In this exercise, you will complete the following tasks:
 - Task 1: Create an Allowed Locations policy assignment.
 - Task 2: Verify the Allowed Locations policy assignment is working. 
 
-#### Task 1: Create an Allowed Locations policy assignment.
+## Task 1: Create an Allowed Locations policy assignment.
 
 In this task, you will create an Allowed Locations policy assignment and specify which Azure regions the policy can use.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Policy** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Policy** and select the **Policy** from service list.
 
 1. On the **Policy** blade, in the **Authoring** section, select **Definitions**.
 
@@ -50,8 +48,8 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    |Setting|Value|
    |---|---|
-   |Subscription|the name of you Azure subscription|
-   |Resource group|**AZ500LAB02**|
+   |Subscription|select your Azure subscription|
+   |Resource group|**AZ500Lab02**|
 
 1. Click on **Select**.
 
@@ -89,7 +87,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
     |Setting|Value|
     |---|---|
-    |Resource group|**AZ500LAB02**|
+    |Resource group|**AZ500Lab02**|
     |Name|**myVnet**|
     |Region|**(US) East US**|
 
